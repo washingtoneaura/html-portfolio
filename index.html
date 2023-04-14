@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>One page portfolio</title>
+        <style>
+            .main-menu {
+                display: flex;
+                justify-content: center;
+                background-color:aqua;
+                padding: 10px;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+              }
+              
+              .main-menu a {
+                text-decoration: none;
+                color: #333;
+                margin-right: 0 15px;
+                font-size: 18px;
+              }
+              
+              .main-menu a:hover {
+                color: #ff0000;
+              }
+              
+              .main-wrapper {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+              }
+              
+              .left-div {
+                background-color: #ff0000; /* Red background color for left div */
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              
+              .right-div {
+                background-color: #00ff00; /* Green background color for right div */
+                flex: 2;
+                display: flex;
+                flex-direction: column; /* Set flex direction to column for vertical layout */
+                align-items: center;
+                justify-content: center;
+                padding: 10px; /* Add padding for spacing */
+
+              }
+              
+              .rounded-image {
+                border-radius: 50%; /* Apply a 50% rounded border to the image */
+                max-width: 100%; /* Ensure the image fits inside the div */
+                height: auto; /* Maintain aspect ratio of the image */
+              }
+                       
+        </style>
+    </head>
+    <body>
+        <div class="main-menu" id="main-menu">
+            <a href="#home">Home</a>&nbsp &nbsp &nbsp &nbsp
+            <a href="#about">About</a>&nbsp &nbsp &nbsp &nbsp
+            <a href="#services">Services</a>&nbsp &nbsp &nbsp &nbsp
+            <a href="#contact">Contact</a>
+
+
+        </div>
+
+        <div class="main-wrapper">
+            <div class="left-div">
+                <img src="washy.jpg" alt="Example Image" class="rounded-image">
+            </div>
+            <div class="right-div">
+              <h1 style="font-size: 80px; margin-bottom: 6;   font-family: 'Courier New', Courier, monospace;">WASHINGTONE AURA</h1>
+              <p style="text-align: left; font-size: 50px; margin-top: 0;">Web developer</p>
+            </div>
+          </div>
+
+
+          <p style="text-align: center; font-size: 60;">WHAT I CAN DO FOR YOU</p>
+
+          <div style="background-color: bisque; display: flex; justify-content: space-between; padding: 10px;">
+            <div style="flex: 1 1 0%; display: flex; align-items: center; flex-direction: column;">
+                <h1 style="font-size: 20px;">Database management</h1>
+                <p>This is the content below the main menu.</p></div>
+            <div style="flex: 1 1 0%; display: flex; align-items: center; flex-direction: column;">
+                <h1 style="font-size: 20px;">Wordpress</h1>
+                <p>This is the content below the main menu.</p></div>
+            <div style="flex: 1 1 0%; display: flex; align-items: center; flex-direction: column;">
+                <h1 style="font-size: 20px;">Java development</h1>
+                <p>This is the content below the main menu.</p></div>
+          </div>
+          
+          <P style="text-align: center; font-size: 60;">SKILLS</p>
+          <div>
+
+
+
+          </div>
+
+
+
+
+        <h1 style="text-align: center; color: #ff0000;">CODING BOOT-CAMP</h1>
+        <p> PS Vweb design</p>
+
+
+    </body>
+</html>
