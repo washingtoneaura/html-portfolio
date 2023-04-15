@@ -4,9 +4,11 @@
         <style>
             .main-menu {
                 display: flex;
-                justify-content: center;
+                justify-content: right;
                 background-color:aqua;
                 padding: 10px;
+                padding-right: 100px;
+                padding-top: 25px;
                 margin: 0;
                 margin-top: 0;
                 margin-right: 0%;
@@ -19,7 +21,7 @@
                 text-decoration: none;
                 color: #2123c9;
                 margin-right: 0 15px;
-                font-size: 20px;
+                font-size: 30px;
                 font-weight: bolder;
               }
               
@@ -71,11 +73,50 @@
                 width: 100%;
                 height: auto;
               }
+
+              /* Container for the photo slider */
+    .slider {
+      width: 100%; /* Set the width of the slider */
+      overflow: hidden; /* Hide overflow */
+      position: relative; /* Set relative position for absolute positioning of slides */
+    }
+
+    /* Slides container */
+    .slides {
+      display: flex; /* Use Flexbox to create a horizontal layout */
+      transition: transform 0.5s ease-in-out; /* Add transition for smooth slide animation */
+    }
+
+    /* Slide item */
+    .slide {
+      flex-shrink: 0; /* Prevent shrinking of slide items */
+      width: 100%; /* Set the width of each slide */
+      height: 300px; /* Set the height of each slide */
+    }
+
+    /* Navigation buttons */
+    .prev, .next {
+      position: absolute; /* Set absolute position for positioning of buttons */
+      top: 50%; /* Position the buttons at the vertical center of the slider */
+      transform: translateY(-50%); /* Center the buttons vertically */
+      cursor: pointer; /* Add cursor pointer for better usability */
+      padding: 10px; /* Add padding for better visibility */
+      background-color: #f0f0f0; /* Set background color for buttons */
+    }
+
+    .prev {
+      left: 10px; /* Position the previous button on the left side of the slider */
+    }
+
+    .next {
+      right: 10px; /* Position the next button on the right side of the slider */
+    }
                        
         </style>
     </head>
     <body>
         <div class="main-menu" id="main-menu">
+          <p style="padding-right: 750px; font-size: larger; font-weight: bolder;">Washingtone_Aura</p>
             <a href="#home">Home</a>&nbsp &nbsp &nbsp &nbsp
             <a href="#services">Services</a>&nbsp &nbsp &nbsp &nbsp
             <a href="#skills">Skills</a>&nbsp &nbsp &nbsp &nbsp
@@ -87,7 +128,7 @@
 
         <div class="main-wrapper" id="home">
             <div class="left-div">
-                <img src="washy.jpg" alt="Example Image" class="rounded-image">
+                <img src="images\washy.jpg" alt="Example Image" class="rounded-image">
             </div>
             <div class="right-div">
               <h1 style="font-size: 80px; margin-bottom: 6;   font-family: Georgia, 'Times New Roman', Times, serif">WASHINGTONE AURA</h1>
@@ -102,34 +143,41 @@
           <div style="background-color: bisque; display: flex; justify-content: space-between; padding: 10px;">
             
             <div style="flex: 1 1 0%; display: flex; align-items: center; flex-direction: column; background-color: #97bfe9; margin-right: 10px; border-radius: 15px;">
-                <h1 style="font-size: 20px;">Database management</h1>
+              <img src="icons\database.png" width="50px" height="50px" style="float: left; margin-right: 10px; margin-top: 10px;">
+              <h1 style="font-size: 20px;">Database management</h1>
                 <p>This is the content below the main menu.<br></p>
                 <p>This is the content below the main menu.<br></p>
                 <p>This is the content below the main menu.<br></p>
                 <p>This is the content below the main menu.<br></p>
               </div>
             <div style="flex: 1 1 0%; display: flex; align-items: center; flex-direction: column; background-color: #97bfe9; margin-right: 10px; border-radius: 15px">
-                <h1 style="font-size: 20px;">Website development</h1>
+              <img src="icons\web.png" width="50px" height="50px" style="float: left; margin-right: 10px; margin-top: 10px;">  
+              <h1 style="font-size: 20px;">Website development</h1>
                 <p>This is the content below the main menu.</p></div>
             <div style="flex: 1 1 0%; display: flex; align-items: center; flex-direction: column; background-color: #97bfe9; border-radius: 15px">
-                <h1 style="font-size: 20px;">Java development</h1>
+              <img src="icons\java.png" width="50px" height="50px" style="float: left; margin-right: 10px; margin-top: 10px;">   
+              <h1 style="font-size: 20px;">Java development</h1>
                 <p>This is the content below the main menu.</p></div>
           </div>
 
 
           <div style="background-color: bisque; display: flex; justify-content: space-between; padding: 10px; padding-bottom: 50px;">
             <div style="flex: 1 1 0%; display: flex; align-items: center; flex-direction: column; background-color: #97bfe9; margin-right: 10px; border-radius: 15px;">
-                <h1 style="font-size: 20px;">Networking</h1>
+                
+              <img src="icons\neural.png" width="50px" height="50px" style="float: left; margin-right: 10px; margin-top: 10px;"> 
+              <h1 style="font-size: 20px;">Networking</h1>
                 <p>This is the content below the main menu.<br></p>
                 <p>This is the content below the main menu.<br></p>
                 <p>This is the content below the main menu.<br></p>
                 <p>This is the content below the main menu.<br></p>
               </div>
             <div style="flex: 1 1 0%; display: flex; align-items: center; flex-direction: column; background-color: #97bfe9; margin-right: 10px; border-radius: 15px">
-                <h1 style="font-size: 20px;">Git and Github</h1>
+              <img src="icons\github.png" width="50px" height="50px" style="float: left; margin-right: 10px; margin-top: 10px;">   
+              <h1 style="font-size: 20px;">Git and Github</h1>
                 <p>This is the content below the main menu.</p></div>
             <div style="flex: 1 1 0%; display: flex; align-items: center; flex-direction: column; background-color: #97bfe9; border-radius: 15px">
-                <h1 style="font-size: 20px;">Google Workspace</h1>
+              <img src="icons\googlew.png" width="50px" height="50px" style="float: left; margin-right: 10px; margin-top: 10px;">   
+              <h1 style="font-size: 20px;">Google Workspace</h1>
                 <p>This is the content below the main menu.</p></div>
           </div>
 
@@ -143,52 +191,52 @@
               <div style="float: left; flex: 70%;">
 
               <div class="skill" style="margin-bottom: 15px; padding-top: 10px;">
-              <div class="skill-name" style="font-weight: bold;">Semantic HTML, CSS, JS</div>
+              <div class="skill-name" style="font-weight: bold; color: #f2f2f2; font-size: 30px;">Semantic HTML, CSS, JS</div>
               <div class="skill-bar" style="background-color: #f2f2f2; border-radius: 10px; height: 25px;">
                   <div class="skill-progress" style="width: 90%; background-color: #007bff; border-radius: 10px; height: 25px;"></div>
               </div>
-              <div class="skill-percentage" style="color: #007bff; font-weight: bold; margin-top: 5px;">90%</div>
+              <div class="skill-percentage" style="color: #007bff; font-weight: bold; margin-top: 5px; font-size: 17px;">90%</div>
           </div>
           <div class="skill" style="margin-bottom: 15px;">
-              <div class="skill-name" style="font-weight: bold;">Wordpress</div>
+              <div class="skill-name" style="font-weight: bold; color: #f2f2f2; font-size: 30px;">Wordpress</div>
               <div class="skill-bar" style="background-color: #f2f2f2; border-radius: 10px; height: 25px;">
                   <div class="skill-progress" style="width: 95%; background-color: #007bff; border-radius: 10px; height: 25px;"></div>
               </div>
-              <div class="skill-percentage" style="color: #007bff; font-weight: bold; margin-top: 5px;">95%</div>
+              <div class="skill-percentage" style="color: #007bff; font-weight: bold; margin-top: 5px; font-size: 17px;">95%</div>
           </div>
           <div class="skill" style="margin-bottom: 15px;">
-              <div class="skill-name" style="font-weight: bold;">SQL</div>
+              <div class="skill-name" style="font-weight: bold; color: #f2f2f2; font-size: 30px;">SQL</div>
               <div class="skill-bar" style="background-color: #f2f2f2; border-radius: 10px; height: 25px;">
                   <div class="skill-progress" style="width: 85%; background-color: #007bff; border-radius: 10px; height: 25px;"></div>
               </div>
-              <div class="skill-percentage" style="color: #007bff; font-weight: bold; margin-top: 5px;">85%</div>
+              <div class="skill-percentage" style="color: #007bff; font-weight: bold; margin-top: 5px; font-size: 17px;">85%</div>
           </div>
           <div class="skill" style="margin-bottom: 15px;">
-            <div class="skill-name" style="font-weight: bold;">Google workspace</div>
+            <div class="skill-name" style="font-weight: bold; color: #f2f2f2; font-size: 30px;">Google workspace</div>
             <div class="skill-bar" style="background-color: #f2f2f2; border-radius: 10px; height: 25px;">
                 <div class="skill-progress" style="width: 95%; background-color: #007bff; border-radius: 10px; height: 25px;"></div>
             </div>
-            <div class="skill-percentage" style="color: #007bff; font-weight: bold; margin-top: 5px;">95%</div>
+            <div class="skill-percentage" style="color: #007bff; font-weight: bold; margin-top: 5px; font-size: 17px;">95%</div>
         </div>
         <div class="skill" style="margin-bottom: 15px;">
-          <div class="skill-name" style="font-weight: bold;">Java</div>
+          <div class="skill-name" style="font-weight: bold; color: #f2f2f2; font-size: 30px;">Java</div>
           <div class="skill-bar" style="background-color: #f2f2f2; border-radius: 10px; height: 25px;">
               <div class="skill-progress" style="width: 90%; background-color: #007bff; border-radius: 10px; height: 25px;"></div>
           </div>
-          <div class="skill-percentage" style="color: #007bff; font-weight: bold; margin-top: 5px;">90%</div>
+          <div class="skill-percentage" style="color: #007bff; font-weight: bold; margin-top: 5px; font-size: 17px;">90%</div>
       </div>
       <div class="skill" style="margin-bottom: 15px;">
-        <div class="skill-name" style="font-weight: bold;">Networking</div>
+        <div class="skill-name" style="font-weight: bold; color: #f2f2f2; font-size: 30px;">Networking</div>
         <div class="skill-bar" style="background-color: #f2f2f2; border-radius: 10px; height: 25px;">
             <div class="skill-progress" style="width: 80%; background-color: #007bff; border-radius: 10px; height: 25px;"></div>
         </div>
-        <div class="skill-percentage" style="color: #007bff; font-weight: bold; margin-top: 5px;">80%</div>
+        <div class="skill-percentage" style="color: #007bff; font-weight: bold; margin-top: 5px; font-size: 17px;">80%</div>
     </div>
           <!-- Add more skills as needed -->
 </div>
 
 <div style="flex: 30%; padding: 40px;">
-  <img src="washy.jpg" alt="Example Image">
+  <img src="images\washy.jpg" alt="Example Image">
 
 </div>
 
@@ -199,36 +247,118 @@
 
   <div id="portfolio" class="portfolio-container" style="display: flex; flex-wrap: wrap; gap: 10px;">
     <div class="portfolio-item">
-      <img src="washy.jpg" alt="Portfolio Image 1">
+      <img src="images\washy1.jpg" alt="Portfolio Image 1">
     </div>
     <div class="portfolio-item">
-      <img src="washy.jpg" alt="Portfolio Image 2">
+      <img src="images\washy2.jpeg" alt="Portfolio Image 2">
     </div>
     <div class="portfolio-item">
-      <img src="washy.jpg" alt="Portfolio Image 3">
+      <img src="images\washy3.jpeg" alt="Portfolio Image 3">
     </div>
     <div class="portfolio-item">
-      <img src="washy.jpg" alt="Portfolio Image 4">
+      <img src="images\washy4.jpeg" alt="Portfolio Image 4">
     </div>
     <div class="portfolio-item">
-      <img src="washy.jpg" alt="Portfolio Image 5">
+      <img src="images\washy5.jpg" alt="Portfolio Image 5">
     </div>
     <div class="portfolio-item">
-      <img src="washy.jpg" alt="Portfolio Image 6">
+      <img src="images\washy6.jpg" alt="Portfolio Image 6">
     </div>
   </div>
          
 
+  <div id="portfolio" style="margin-top: 0px; padding-top: 0px; text-align: left; font-size: 60; background-color: #4b2f2f;"><p style="margin: 0px; padding-top: 50px; padding-bottom: 0%; margin-left: 40px; padding-bottom: 30px;">CONTACT WITH ME</p>
+  </div>
+  <div style="display: flex;">
+    <div id="contact" style=" float: left; flex: 70%; height:auto; background-color: #4b2f2f;">
+      <div style="background-color: #d1b8b8; border-radius: 4px; height: 4px; margin-left: 40px; width: 30%;"></div>
+      <div style="padding-left: 80px; font-size: 30px; overflow: auto;">
+        <img src="icons\mail.png" width="50px" height="50px" style="float: left; margin-right: 10px; margin-top: 10px;" alt="Portfolio Image 6">
+        <p style="margin-top: 20px; color: #ffffff;">aurawashingtone@gmail.com</p>
+      </div>
+      <div style="padding-left: 80px; font-size: 30px; overflow: auto;">
+        <img src="icons\phone.png" width="50px" height="50px" style="float: left; margin-right: 10px; margin-top: 10px;" alt="Portfolio Image 6">
+        <p style="margin-top: 20px; color: #ffffff;">+254 711 497 488</p>
+      </div>
+      <div style="padding-left: 80px; font-size: 30px; overflow: auto;">
+        <img src="icons\linkedin.png" width="50px" height="50px" style="float: left; margin-right: 10px; margin-top: 10px;" alt="Portfolio Image 6">
+        <p style="margin-top: 20px; color: #ffffff;">@aurawashingtone</p>
+      </div>
+      <div style="padding-left: 80px; font-size: 30px; overflow: auto;">
+        <img src="icons\youtube.png" width="50px" height="50px" style="float: left; margin-right: 10px; margin-top: 10px;" alt="Portfolio Image 6">
+        <p style="margin-top: 20px; color: #ffffff;">@washingtoneaura</p>
+      </div>
+      <div style="padding-left: 80px; font-size: 30px; overflow: auto;">
+        <img src="icons\google.png" width="50px" height="50px" style="float: left; margin-right: 10px; margin-top: 10px;" alt="Portfolio Image 6">
+        <p style="margin-top: 20px; color: #ffffff;">Nairobi, Kenya.</p>
+      </div>
+    </div>
 
-  <P style="text-align: center; font-size: 60; padding-bottom: 2px;">CONTACT WITH ME</p>
-    <div id="contact">
+    <div class="slider" style="flex: 25%; ">
+      <div class="slides">
+        <div class="slide"><img src="images\washy5.jpg" width="500px" height="500px"></div>
+        <div class="slide"><img src="images\washy6.jpg" width="500px" height="500px"></div>
+        <div class="slide"><img src="images\washy7.jpg" width="500px" height="500px"></div>
+        <div class="slide"><img src="images\washy.jpg" width="500px" height="500px"></div>
+        <div class="slide"><img src="images\washy1.jpg" width="500px" height="500px"></div>
+      </div>
+      <div class="prev">&lt;</div>
+    <div class="next">&gt;</div>
+    </div>
+    <script>
+      // JavaScript for slider functionality
+      const slider = document.querySelector('.slider');
+      const slides = document.querySelector('.slides');
+      const prevBtn = document.querySelector('.prev');
+      const nextBtn = document.querySelector('.next');
+      let slideIndex = 0;
+      let slideInterval;
+  
+      // Previous button click event
+      prevBtn.addEventListener('click', () => {
+        slideIndex--;
+        if (slideIndex < 0) {
+          slideIndex = slides.children.length - 1;
+        }
+        updateSlider();
+      });
+  
+      // Next button click event
+      nextBtn.addEventListener('click', () => {
+        slideIndex++;
+        if (slideIndex === slides.children.length) {
+          slideIndex = 0;
+        }
+        updateSlider();
+      });
 
+      // Start auto sliding
+    function startSlideShow() {
+      slideInterval = setInterval(() => {
+        slideIndex++;
+        if (slideIndex === slides.children.length) {
+          slideIndex = 0;
+        }
+        updateSlider();
+      }, 1000); // Change interval value to set auto slide duration in milliseconds
+    }
+
+    // Stop auto sliding
+    function stopSlideShow() {
+      clearInterval(slideInterval);
+    }
+  
+      // Update slider position
+      function updateSlider() {
+        slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+      }
+    </script>
     </div>
 
 
 
         <h1 style="text-align: center; color: #ff0000;">CODING BOOT-CAMP</h1>
-        <p> PS Vweb design</p>
+        <p style="text-align: center; font-weight: bold;">&copy2023 - aurawashingtone</p>
 
 
     </body>
