@@ -7,15 +7,15 @@
                 display: flex;
                 justify-content: right;
                 background-color:aqua;
-                padding: 10px;
+                padding-left: 10px;
                 padding-right: 100px;
-                padding-top: 25px;
-                margin: 0;
-                margin-top: 0;
-                margin-right: 0%;
+                padding-top: 10px;
+                padding-bottom: 0px;
+                margin: 0px;
+                margin-bottom: 0px;
                 position: -webkit-sticky;
                 position: sticky;
-                top: 0;
+                top: 0px;
               }
               
               .main-menu a {
@@ -75,49 +75,13 @@
                 height: auto;
               }
 
-              /* Container for the photo slider */
-    .slider {
-      width: 100%; /* Set the width of the slider */
-      overflow: hidden; /* Hide overflow */
-      position: relative; /* Set relative position for absolute positioning of slides */
-    }
 
-    /* Slides container */
-    .slides {
-      display: flex; /* Use Flexbox to create a horizontal layout */
-      transition: transform 0.5s ease-in-out; /* Add transition for smooth slide animation */
-    }
-
-    /* Slide item */
-    .slide {
-      flex-shrink: 0; /* Prevent shrinking of slide items */
-      width: 100%; /* Set the width of each slide */
-      height: 300px; /* Set the height of each slide */
-    }
-
-    /* Navigation buttons */
-    .prev, .next {
-      position: absolute; /* Set absolute position for positioning of buttons */
-      top: 50%; /* Position the buttons at the vertical center of the slider */
-      transform: translateY(-50%); /* Center the buttons vertically */
-      cursor: pointer; /* Add cursor pointer for better usability */
-      padding: 10px; /* Add padding for better visibility */
-      background-color: #f0f0f0; /* Set background color for buttons */
-    }
-
-    .prev {
-      left: 10px; /* Position the previous button on the left side of the slider */
-    }
-
-    .next {
-      right: 10px; /* Position the next button on the right side of the slider */
-    }
                        
         </style>
     </head>
     <body>
         <div class="main-menu" id="main-menu">
-          <p style="padding-right: 750px; font-size: larger; font-weight: bolder;">Washingtone_Aura</p>
+          <p style="padding-right: 750px; font-size: small; font-weight: bolder;">Washingtone_Aura</p>
             <a href="#home">Home</a>&nbsp &nbsp &nbsp &nbsp
             <a href="#services">Services</a>&nbsp &nbsp &nbsp &nbsp
             <a href="#skills">Skills</a>&nbsp &nbsp &nbsp &nbsp
@@ -139,7 +103,7 @@
           </div>
 
 
-          <div id="services" style="margin-top: 0px; padding-top: 0px; text-align: center; font-size: 60; background-color: bisque;"><p style="margin: 0px; padding-top: 50px; padding-bottom: 0%;">WHAT I CAN DO FOR YOU</p></div>
+          <div id="services" style="margin-top: 0px; padding-top: 0px; text-align: center; font-size: 60px; background-color: bisque;"><p style="margin: 0px; padding-top: 50px; padding-bottom: 0%;">WHAT I CAN DO FOR YOU</p></div>
 
           <div style="background-color: bisque; display: flex; justify-content: space-between; padding: 10px;">
             
@@ -184,7 +148,7 @@
 
 
           
-          <div id="skills" style="margin-top: 0px; padding-top: 0px; text-align: center; font-size: 60; background-color: #8d3f3f;;"><p style="margin: 0px; padding-top: 50px; padding-bottom: 0%;">I AM A FULL STACK DEVELOPER</p></div>
+          <div id="skills" style="margin-top: 0px; padding-top: 0px; text-align: center; font-size: 60px; background-color: #8d3f3f;;"><p style="margin: 0px; padding-top: 50px; padding-bottom: 0%;">I AM A FULL STACK DEVELOPER</p></div>
 
 
             <div style="display: flex; padding-left: 60px; padding-top: 5px; padding-right: 60px; padding-bottom: 5px; background-color: #8d3f3f;">
@@ -237,18 +201,18 @@
 </div>
 
 <div style="flex: 30%; padding: 40px;">
-  <img src="images\washy.jpg" alt="Example Image">
+  <img src="images\washy.png" alt="Example Image" width="120%" height="90%" style="border-radius: 25%; padding-top: 30px;">
 
 </div>
 
 </div>
 
 
-<div id="portfolio" style="margin-top: 0px; padding-top: 0px; text-align: center; font-size: 60; background-color: #ffffff;;"><p style="margin: 0px; padding-top: 50px; padding-bottom: 0%;">PORTFOLIO</p></div>
+<div id="portfolio" style="margin-top: 0px; padding-top: 0px; text-align: center; font-size: 60px; background-color: #ffffff;;"><p style="margin: 0px; padding-top: 50px; padding-bottom: 0%;">PORTFOLIO</p></div>
 
   <div id="portfolio" class="portfolio-container" style="display: flex; flex-wrap: wrap; gap: 10px;">
     <div class="portfolio-item">
-      <img src="images\washy1.jpg" alt="Portfolio Image 1">
+      <img src="images\washy1.png" alt="Portfolio Image 1">
     </div>
     <div class="portfolio-item">
       <img src="images\washy2.jpeg" alt="Portfolio Image 2">
@@ -257,22 +221,23 @@
       <img src="images\washy3.jpeg" alt="Portfolio Image 3">
     </div>
     <div class="portfolio-item">
-      <img src="images\washy4.jpeg" alt="Portfolio Image 4">
+      <img src="images\washy2.png" alt="Portfolio Image 4">
     </div>
     <div class="portfolio-item">
       <img src="images\washy5.jpg" alt="Portfolio Image 5">
     </div>
     <div class="portfolio-item">
-      <img src="images\washy6.jpg" alt="Portfolio Image 6">
+      <img src="images\washy6.png" alt="Portfolio Image 6">
     </div>
   </div>
          
 
-  <div id="portfolio" style="margin-top: 0px; padding-top: 0px; text-align: left; font-size: 60; background-color: #4b2f2f;"><p style="margin: 0px; padding-top: 50px; padding-bottom: 0%; margin-left: 40px; padding-bottom: 30px;">CONTACT WITH ME</p>
+  <div id="contact" style="margin-top: 0px; padding-top: 0px; text-align: left; font-size: 60px; background-color: #8d3f3f;"><p style="margin: 0px; padding-top: 50px; padding-bottom: 0%; margin-left: 40px; padding-bottom: 30px;">CONTACT WITH ME</p>
   </div>
-  <div style="display: flex;">
-    <div id="contact" style=" float: left; flex: 70%; height:auto; background-color: #4b2f2f;">
-      <div style="background-color: #d1b8b8; border-radius: 4px; height: 4px; margin-left: 40px; width: 30%;"></div>
+  <div style="display: flex; padding-left: 60px; padding-top: 5px; padding-right: 60px; padding-bottom: 5px; background-color: #8d3f3f;">
+    <div style=" float: left; flex: 70%; ">
+      <div style="background-color: #d1b8b8; border-radius: 5px; height: 10px; margin-left: 0px; width: 30%;"></div>
+      <br><br>
       <div style="padding-left: 80px; font-size: 30px; overflow: auto;">
         <img src="icons\mail.png" width="50px" height="50px" style="float: left; margin-right: 10px; margin-top: 10px;" alt="Portfolio Image 6">
         <p style="margin-top: 20px; color: #ffffff;">aurawashingtone@gmail.com</p>
@@ -295,65 +260,10 @@
       </div>
     </div>
 
-    <div class="slider" style="flex: 25%; ">
-      <div class="slides">
-        <div class="slide"><img src="images\washy5.jpg" width="500px" height="500px"></div>
-        <div class="slide"><img src="images\washy6.jpg" width="500px" height="500px"></div>
-        <div class="slide"><img src="images\washy7.jpg" width="500px" height="500px"></div>
-        <div class="slide"><img src="images\washy.jpg" width="500px" height="500px"></div>
-        <div class="slide"><img src="images\washy1.jpg" width="500px" height="500px"></div>
-      </div>
-      <div class="prev">&lt;</div>
-    <div class="next">&gt;</div>
+    <div style="flex: 30%; padding: 40px; ">
+        <img src="images\washy4.png" height="100%" width="100%" style="border-radius: 50%; padding-right: 40px; align-items: center;">
     </div>
-    <script>
-      // JavaScript for slider functionality
-      const slider = document.querySelector('.slider');
-      const slides = document.querySelector('.slides');
-      const prevBtn = document.querySelector('.prev');
-      const nextBtn = document.querySelector('.next');
-      let slideIndex = 0;
-      let slideInterval;
-  
-      // Previous button click event
-      prevBtn.addEventListener('click', () => {
-        slideIndex--;
-        if (slideIndex < 0) {
-          slideIndex = slides.children.length - 1;
-        }
-        updateSlider();
-      });
-  
-      // Next button click event
-      nextBtn.addEventListener('click', () => {
-        slideIndex++;
-        if (slideIndex === slides.children.length) {
-          slideIndex = 0;
-        }
-        updateSlider();
-      });
-
-      // Start auto sliding
-    function startSlideShow() {
-      slideInterval = setInterval(() => {
-        slideIndex++;
-        if (slideIndex === slides.children.length) {
-          slideIndex = 0;
-        }
-        updateSlider();
-      }, 1000); // Change interval value to set auto slide duration in milliseconds
-    }
-
-    // Stop auto sliding
-    function stopSlideShow() {
-      clearInterval(slideInterval);
-    }
-  
-      // Update slider position
-      function updateSlider() {
-        slides.style.transform = `translateX(-${slideIndex * 100}%)`;
-      }
-    </script>
+    
     </div>
 
 
